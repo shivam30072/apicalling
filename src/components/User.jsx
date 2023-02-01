@@ -45,7 +45,6 @@ const Content = ({ user }) => {
       </button>
     </div>
 
-// description section
 
     {toggle && 
     <div className="bg-white rounded-lg border border-black mb-3 pl-1 sm:pl-3 animation " >
