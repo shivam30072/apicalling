@@ -8,7 +8,7 @@ const Content = ({ user }) => {
   const [toggle, setToggle] = useState(false);
   const [info, setInfo] = useState([]);
 
-  const showDetails = async (id) => {
+  const showDetails = async (id) => {     // function for fetching the information of single user
     setToggle(!toggle);
     const response = await axios.get(
       `https://jsonplaceholder.typicode.com/users/${id}`
@@ -44,6 +44,8 @@ const Content = ({ user }) => {
         {toggle ? "hide details" : "view details"}
       </button>
     </div>
+
+// description section
 
     {toggle && 
     <div className="bg-white rounded-lg border border-black mb-3 pl-1 sm:pl-3 animation " >
